@@ -2,631 +2,354 @@
 <html lang="th">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>goodbook | ที่สามของเธอ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=K2D&family=Kanit&family=Mitr&family=Sriracha&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=K2D&family=Pridi&family=Sriracha&display=swap"
-        rel="stylesheet">
+<body class="bg-body">
 
-    <title>ที่สามของเธอ | แนะนำหนังสือ</title>
+  <body class="bg-body"
+    style="--bs-body-color: #5a3e2b; --bs-body-color-rgb: 90, 62, 43; --bs-emphasis-color: #5a3e2b; --bs-emphasis-color-rgb: 90, 62, 43; --bs-link-color: #5a3e2b; --bs-link-hover-color: #3e2a1c;">
+  </body>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md sticky-top bg-warning-subtle shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold fs-3 text-warning-emphasis" href="#top">
+        <img src="images/shore.png" width="48" height="48" class="rounded-circle me-2">
+        goodbook
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="เปิดเมนู">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-md-3 fw-semibold k2d-regular">
+          <li class="nav-item"><a class="nav-link" href="#info">ข้อมูลหนังสือ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#synopsis">เรื่องย่อ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#highlights">จุดเด่น</a></li>
+          <li class="nav-item"><a class="nav-link" href="#review">รีวิว</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <!-- Hero -->
 
-<body>
-
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg" style="background-color:#ffef9f;">
-
-        <header>
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
-                        <img src="images/book icon.png" class="img-fluid me-2" width="50">
-                        <span class="fw-bold fs-3">bookreview</span>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarMenu">
-
-                        <ul class="navbar-nav ms-auto">
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark k2d-regular" href="#about">
-                                    ข้อมูลหนังสือ
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark k2d-regular" href="#story">
-                                    เรื่องย่อ
-                                </a>
-                            </li>
-
-                            <li class="nav-item ">
-                                <a class="nav-link text-dark k2d-regular" href="#highlight">
-                                    จุดเด่น
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark k2d-regular" href="#review">
-                                    รีวิว
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-            </div>
-    </nav>
-
-
-    <!-- ================= HERO ================= -->
-    <section class="py-5" style="
-        background-image: url('images/or.jpg');
+  <header id="top" class="py-5" style="
+        background-image: url('images/bg1.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     ">
 
-        <div class="container">
+    <div class="container">
+      <div class="row align-items-center g-4">
 
-            <div class="row align-items-center g-4">
+        <!-- รูปปกหนังสือ -->
 
-                <!-- รูปหนังสือ -->
-                <div class="col-lg-5 text-center">
+        <div class="col-8 col-md-4 col-lg-3 mx-auto mx-md-0" data-aos="zoom-in-right" data-aos-duration="1000">
 
-                    <div class="card border-0 shadow-lg">
-
-                        <img src="images/book.webp" class="img-fluid rounded" alt="ปกหนังสือ ที่สามของเธอ"
-                            data-aos="zoom-in-down">
-
-                    </div>
-
-                </div>
-
-
-                <!-- ข้อมูลหลัก -->
-                <div class="col-lg-7">
-
-                    <span class="badge mb-3 k2d-regular" style="background-color:#f79256;">
-
-                        BOY LOVE
-
-                    </span>
-
-                    <div class="bg-white rounded-4 shadow p-4">
-
-                        <h1 class="display-4 fw-bold pridi-regular">
-
-                            ที่สามของเธอ
-
-                        </h1>
-
-
-                        <p class="fs-4 fw-bold sriracha-regular">
-
-                            “แค่เสือเจ็บหนีไปพักใจ หายดีเมื่อไหร่จะกลับมา”
-
-                        </p>
-
-
-                        <p class="lead k2d-regular">
-
-                            นิยาย Boy Love แนวโรแมนติกคอมเมดี้
-                            ฟีลกู้ด อ่านง่าย และเต็มไปด้วยความอบอุ่น
-
-                        </p>
-
-
-                        <p class="lead k2d-regular">
-
-                            แต่งโดยนามปากกา
-                            <strong>LAILA (ไลลา)</strong>
-
-                        </p>
-
-                    </div>
-                    <bg>
-                    <span class="badge mb-3 k2d-regular" style="background-color:#f79256;">
-
-                        อ่านเรื่องย่อ
-
-                    </span>
-                    </bg>
-                </div>
-
-            </div>
+          <img src="images/book.webp" class="img-fluid rounded-4 shadow" alt="ปกหนังสือ ที่สามของเธอ">
 
         </div>
 
-    </section>
-    ```
+        <!-- ข้อมูลหนังสือ -->
+        <div class="col-md-8 col-lg-9">
 
 
+          <span class="badge rounded-pill fs-6 mb-3 mitr-regular" style="background: linear-gradient(135deg, #ffd82a 0%, #FFFFFF 100%);
+         color: #3e2a1c;">
+            Boy love
+          </span>
 
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="py-5">
+          <h1 class="display-4 fw-bold text-body-emphasis mitr-regular">
+            ที่สามของเธอ
+          </h1>
 
-        <div class="container">
+          <p class="fs-4 fw-semibold text-body-emphasis sriracha-regular">
+            “แค่เสือเจ็บหนีไปพักใจ หายดีเมื่อไหร่จะกลับมา”
+          </p>
 
-            <div class="text-center mb-5">
+          <p class="lead mitr-regular">
+            นิยาย Boy Love แนวโรแมนติกคอมเมดี้ ฟีลกู้ด
+            เรื่องราวที่เต็มไปด้วยความวุ่นวาย
+            แต่กลับพาใจใครบางคนหวั่นไหว
+            แต่งโดยนามปากกา LAILA (ไลลา)
+          </p>
 
-                <h2 class="fw-bold pridi-regular">
-                    ข้อมูลหนังสือ
-                </h2>
-
-                <div class="mx-auto" style="width:80px;height:5px;background-color:#fdffff;">
-                </div>
-
-            </div>
-
-
-            <div class="row justify-content-center">
-
-                <div class="col-lg-9">
-
-                    <div class="card border-0 shadow-sm">
-
-                        <div class="card-body p-4">
-
-                            <h4 class="fw-bold mb-3 pridi-regular">
-                                ที่สามของเธอ
-                            </h4>
-
-                            <p class="mb-0 k2d-regular">
-                                หนังสือนิยายวาย (Boy Love)
-                                แนวโรแมนติก-คอมเมดี้ ฟีลกู้ด
-                                แต่งโดยนามปากกา
-                                <strong>LAILA (ไลลา)</strong>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+          <a href="#synopsis" class="btn btn-lg rounded-pill px-4 mitr-regular" style="background: linear-gradient(135deg, #ffd82a 0%, #FFFFFF 100%);
+         color: #3e2a1c;
+         border: none;">
+            อ่านเรื่องย่อ
+          </a>
 
         </div>
 
-    </section>
+      </div>
+    </div>
 
+  </header>
 
-    <!-- ================= STORY ================= -->
-    <section id="story" class="py-5" style="background-color:#ffd6e0;">
-
-        <div class="container">
-
-            <div class="row justify-content-center">
-
-                <div class="col-lg-10">
-
-                    <div class="card border-0 shadow">
-
-                        <div class="card-body p-4 p-lg-5">
-
-                            <h2 class="fw-bold mb-4 pridi-regular">
-                                เรื่องย่อ
-                            </h2>
-
-                            <p class="fs-5 lh-lg k2d-regular">
-
-                                เรื่องราวของ
-                                <strong>"สาม ไตรภพ อดิศวร"</strong>
-                                นายใหญ่แห่งไร่อดิศวร
-                                ที่แอบรักคนคนหนึ่งมานานหลายปี
-                                แต่กลับโดนพี่ชายตัวเองปาดหน้า
-                                แย่งสารภาพรักและคบกันไปก่อน
-
-                            </p>
-
-                            <p class="fs-5 lh-lg k2d-regular">
-
-                                ด้วยความช้ำรักเขาจึงหนีไปพักใจ
-                                ไกลถึงเกาะทางภาคใต้
-                                ทำให้พี่ชายต้องส่ง
-                                <strong>
-                                    "แจม จีรณัช คิเคะงาวะ"
-                                </strong>
-                                ผู้ช่วยเลขานุการสุดเนี้ยบและฉลาด
-                                ให้เดินทางตามตัวเขากลับมางานแต่งงาน
-                                ให้ทันภายใน 2 สัปดาห์
-
-                            </p>
-
-                            <p class="fs-5 lh-lg mb-0 k2d-regular">
-
-                                จากคู่กัดที่พระเอกสุดดื้อไม่ยอมกลับง่าย ๆ
-                                แถมยังต้องจับพลัดจับผลูพากันหนีตาย
-                                และติดเกาะไปด้วยกัน
-                                ความใกล้ชิดในสถานการณ์ต่าง ๆ
-                                จึงทำให้ความสัมพันธ์จากคู่กัด
-                                ค่อย ๆ พัฒนาไปเป็นความรักแบบอบอุ่น
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+  <!-- Book info + benefits -->
+  <section id="info" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="h3 fw-bold mb-3 kanit-regular">ข้อมูลหนังสือ</h2>
+          <div class="card rounded-5 shadow">
+            <ul class="list-group list-group-flush rounded-5 mitr-regular">
+              <li class="list-group-item px-4 py-3"><strong>ผู้เขียน :</strong> ไลลา</li>
+              <li class="list-group-item px-4 py-3"><strong>สำนักพิมพ์ :</strong> ซันฟลาวเวอร์บุ๊ค</li>
+              <li class="list-group-item px-4 py-3"><strong>หมวดหมู่ :</strong> นิยาย, นิยายวาย ยูริ, นิยายวายปัจจุบัน
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h2 class="h3 fw-bold mb-3 kanit-regular">สิ่งที่ได้รับจากการอ่าน</h2>
+          <div class="card rounded-5 shadow">
+            <div class="card-body p-4 mitr-regular">
+              การอ่านเรื่อง “ที่สามของเธอ” นอกจากจะได้รับความสนุกและความเพลิดเพลินแล้ว
+              ยังทำให้ผู้อ่านได้มองเห็นมุมมองเกี่ยวกับความรัก การสื่อสาร การเข้าใจความรู้สึกของผู้อื่น
+              และการยอมรับความแตกต่างของความสัมพันธ์ นอกจากนี้ยังช่วยให้ผู้อ่านได้ฝึกคิดวิเคราะห์
+              ผ่านการตัดสินใจและความสัมพันธ์ของตัวละคร
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Synopsis -->
+  <section id="synopsis" class="py-5">
+    <div class="container">
+
+      <h2 class="h3 fw-bold mb-3 kanit-regular">
+        เรื่องย่อ
+      </h2>
+
+      <!-- กล่องข้อความสีชมพูไล่เฉดสีขาว -->
+      <div class="card border-0 rounded-5 shadow"
+        style="background: linear-gradient(135deg, #F8C8DC 0%, #FFFFFF 100%);">
+
+        <div class="card-body p-4 p-md-5">
+          <p class="mb-0 lh-lg mitr-regular">
+            เรื่องราวของ <strong>"สาม ไตรภพ อดิศวร"</strong>
+            นายใหญ่แห่งไร่อดิศวร ที่แอบรักคนคนหนึ่งมานานหลายปี
+            แต่กลับโดนพี่ชายตัวเองปาดหน้าแย่งสารภาพรักและคบกันไปก่อน
+            ด้วยความช้ำรักเขาจึงหนีไปพักใจไกลถึงเกาะทางภาคใต้
+            ทำให้พี่ชายต้องส่ง <strong>"แจม จีรณัช คิเคะงาวะ"</strong>
+            ผู้ช่วยเลขานุการสุดเนี้ยบและเก่งกาจ
+            ให้เดินทางตามตัวเขากลับมางานแต่งงานให้ทันภายใน 2 สัปดาห์
+            จากคู่กัดที่พระเอกสุดดื้อไม่ยอมกลับง่าย ๆ
+            แถมยังต้องจับพลัดจับผลูพากันหนีตาย และติดเกาะไปด้วยกัน
+            ความใกล้ชิดในสถานการณ์ต่าง ๆ
+            จึงทำให้ความสัมพันธ์จากคู่กัดค่อย ๆ พัฒนาไปเป็นความรักแบบอบอุ่น
+          </p>
         </div>
 
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+
+  <!-- Highlights -->
+  <section id="highlights" class="py-5" style="background-image: url('images/bg2.jpg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;">
 
 
-    <!-- ================= HIGHLIGHT ================= -->
-    <section id="highlight" class="py-5">
 
-        <div class="container">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold kanit-regular">จุดเด่นของหนังสือ</h2>
+        <p class="text-body-secondary kanit-regular">
+          ทำไมควรอ่านหนังสือเรื่องนี้
+        </p>
+      </div>
 
-            <div class="text-center mb-5">
+      <div class="row g-4 justify-content-center">
 
-                <h2 class="fw-bold pridi-regular">
-                    จุดเด่นของหนังสือ
-                </h2>
+        <!-- จุดเด่นที่ 1 -->
+        <div class="col-md-4" data-aos="fade-left" data-aos-offset="200" data-aos-duration="800">
 
-                <p class="text-secondary k2d-regular">
-                    ทำไมถึงควรอ่านเรื่องนี้?
-                </p>
+          <div class="card h-100 text-center rounded-5 shadow border-warning">
+            <div class="card-body p-4">
+              <img src="images/smaile.png" alt="เรื่องราวชวนอมยิ้ม" width="100" height="100"
+                class="rounded-circle object-fit-cover mb-3">
 
+              <h3 class="h5 fw-bold mitr-regular">เรื่องราวชวนอมยิ้ม</h3>
+              <p class="mb-0 mitr-regular">
+                เนื้อเรื่องสนุก ทำให้ผู้อ่านได้คลายเครียด
+              </p>
             </div>
-
-
-            <div class="row g-4">
-
-                <!-- Card 1 -->
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card h-100 border-0 shadow-sm text-center">
-
-                        <div class="card-body p-4">
-
-
-
-                            <h5 class="fw-bold k2d-regular">
-                                ชวนอมยิ้ม
-                            </h5>
-
-                            <p class="text-secondary mb-0 k2d-regular">
-                                มีฉากและเหตุการณ์ชวนอมยิ้ม
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Card 2 -->
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card h-100 border-0 shadow-sm text-center">
-
-                        <div class="card-body p-4">
-
-
-
-                            <h5 class="fw-bold k2d-regular">
-                                ฟีลกู้ด
-                            </h5>
-
-                            <p class="text-secondary mb-0 k2d-regular">
-                                บรรยากาศฟีลกู้ด อ่านง่าย
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Card 3 -->
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card h-100 border-0 shadow-sm text-center">
-
-                        <div class="card-body p-4">
-
-
-
-                            <h5 class="fw-bold k2d-regular">
-                                ตัวละครน่าติดตาม
-                            </h5>
-
-                            <p class="text-secondary mb-0 k2d-regular">
-                                ตัวละครมีความสัมพันธ์ที่น่าติดตาม
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Card 4 -->
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card h-100 border-0 shadow-sm text-center">
-
-                        <div class="card-body p-4">
-
-
-
-                            <h5 class="fw-bold k2d-regular">
-                                ได้ข้อคิด
-                            </h5>
-
-                            <p class="text-secondary mb-0 k2d-regular">
-                                มีข้อคิดเกี่ยวกับความรักและความสัมพันธ์
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+          </div>
         </div>
 
-    </section>
+        <!-- จุดเด่นที่ 2 -->
+        <div class="col-md-4" data-aos="fade-left" data-aos-offset="200" data-aos-duration="800" data-aos-delay="150">
 
+          <div class="card h-100 text-center rounded-5 shadow border-warning">
+            <div class="card-body p-4">
+              <img src="images/add-user.png" alt="ตัวละครน่าติดตาม" width="100" height="100"
+                class="rounded-circle object-fit-cover mb-3">
 
-    <!-- ================= WHAT YOU GET ================= -->
-    <section class="py-5" style="background-color:#ffd6e0;">
-
-        <div class="container">
-
-            <div class="row align-items-center g-4">
-
-                <div class="col-lg-5">
-
-                    <h2 class="fw-bold pridi-regular">
-                        สิ่งที่ได้รับจากการอ่าน
-                    </h2>
-
-                    <p class="lead sriracha-regular">
-                        มากกว่าความสนุก คือมุมมองที่ได้จากเรื่องราว
-                    </p>
-
-                </div>
-
-
-                <div class="col-lg-7">
-
-                    <div class="card border-0 shadow-sm">
-
-                        <div class="card-body p-4">
-
-                            <p class="fs-5 lh-lg mb-0 k2d-regular">
-
-                                การอ่านเรื่อง
-                                <strong>“ที่สามของเธอ”</strong>
-                                นอกจากจะได้รับความสนุกและความเพลิดเพลินแล้ว
-                                ยังทำให้ผู้อ่านได้มองเห็นมุมมองเกี่ยวกับความรัก
-                                การสื่อสาร การเข้าใจความรู้สึกของผู้อื่น
-                                และการยอมรับความแตกต่างของความสัมพันธ์
-                                นอกจากนี้ยังช่วยให้ผู้อ่านได้ฝึกคิดวิเคราะห์
-                                ผ่านการตัดสินใจและความสัมพันธ์ของตัวละคร
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+              <h3 class="h5 fw-bold mitr-regular">ตัวละครน่าติดตาม</h3>
+              <p class="mb-0 mitr-regular">
+                ตัวละครหลักมีมุมมองในหลายมุม ไม่ตลกอย่างเดียว
+              </p>
             </div>
-
+          </div>
         </div>
 
-    </section>
+        <!-- จุดเด่นที่ 3 -->
+        <div class="col-md-4" data-aos="fade-left" data-aos-offset="200" data-aos-duration="800" data-aos-delay="300">
 
+          <div class="card h-100 text-center rounded-5 shadow border-warning">
+            <div class="card-body p-4">
+              <img src="images/learning.png" alt="ได้ข้อคิด" width="100" height="100"
+                class="rounded-circle object-fit-cover mb-3">
 
-    <!-- ================= REVIEW ================= -->
-    <section id="review" class="py-5">
-
-        <div class="container">
-
-            <div class="row justify-content-center">
-
-                <div class="col-lg-9">
-
-                    <div class="text-center mb-4">
-
-                        <h2 class="fw-bold pridi-regular">
-                            รีวิวความรู้สึกหลังอ่าน
-                        </h2>
-
-                    </div>
-
-
-                    <div class="card border-0 shadow-lg">
-
-                        <div class="card-body p-4 p-lg-5 text-center">
-
-
-                            <p class="fs-5 lh-lg k2d-regular">
-
-                                สำหรับผู้ที่ชื่นชอบนิยาย Boy Love
-                                ที่มีบรรยากาศโรแมนติก
-                                ผสมอารมณ์ขันและความอบอุ่น
-                                “ที่สามของเธอ” เป็นอีกเรื่องที่น่าสนใจ
-                                เพราะมีทั้งเรื่องราวความสัมพันธ์
-                                และเหตุการณ์ที่ช่วยสร้างสีสันให้กับเนื้อเรื่อง
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+              <h3 class="h5 fw-bold mitr-regular">ได้ข้อคิด</h3>
+              <p class="mb-0 mitr-regular">
+                แสดงให้เห็นข้อคิดเกี่ยวกับทุกความสัมพันธ์
+              </p>
             </div>
-
+          </div>
         </div>
 
-    </section>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Review + series -->
+  <section id="review" class="py-5">
+    <div class="container">
+
+      <h2 class="fw-bold text-center mb-4 kanit-regular">
+        รีวิวความรู้สึกหลังอ่าน
+      </h2>
+
+      <!-- กล่องข้อความสีชมพูไล่เฉดสีขาว -->
+      <div class="card border-0 rounded-5 shadow mx-auto mb-5" style="max-width: 900px;
+             background: linear-gradient(135deg, #F8C8DC 0%, #FFFFFF 100%);">
+
+        <div class="card-body p-4 p-md-5 mitr-regular">
+          สำหรับผู้ที่ชื่นชอบนิยาย Boy Love ที่มีบรรยากาศโรแมนติก
+          ผสมอารมณ์ขันและความอบอุ่น “ที่สามของเธอ” เป็นอีกเรื่องที่น่าสนใจ
+          เพราะมีทั้งเรื่องราวความสัมพันธ์ และเหตุการณ์ที่ช่วยสร้างสีสันให้กับเนื้อเรื่อง
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
-    <!-- ================= SERIES ================= -->
-    <section class="py-5" style="background-color:#90f1ef;">
+  <!-- จากนิยายสู่ซีรีส์ -->
+  <section id="series" class="py-5" style="background-image: url('images/bg3.jpg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="text-center text-dark mb-5">
+      <!-- หัวข้อ -->
+      <div class="text-center mb-4">
+        <h3 class="fw-bold kanit-regular">จากนิยายสู่ซีรีส์</h3>
+        <p class="text-body-secondary kanit-regular">
+          นักแสดงผู้รับบทตัวละครหลัก
+        </p>
+      </div>
 
-                <h2 class="fw-bold pridi-regular">
-                    จากนิยายสู่ซีรีส์
-                </h2>
+      <!-- การ์ดนักแสดง -->
+      <div class="row g-4 justify-content-center mb-5">
 
-                <p class="fw-bold k2d-regular">
-                    นักแสดงผู้รับบทตัวละครหลัก
-                </p>
+        <div class="col-8 col-sm-5 col-md-3">
+          <div class="card h-100 text-center rounded-5 shadow bg-warning-subtle border-0">
+            <img src="images/jam.jpg" class="card-img-top rounded-top-5" alt="ณฐ ณฐสิชณ์ รับบท แจม จีรณัช">
 
+            <div class="card-body">
+              <h4 class="h5 fw-bold mitr-regular">แจม จีรณัช</h4>
+              <p class="mb-0 mitr-regular">รับบทโดย ณฐ ณฐสิชณ์</p>
             </div>
+          </div>
+        </div>
 
+        <div class="col-8 col-sm-5 col-md-3">
+          <div class="card h-100 text-center rounded-5 shadow bg-warning-subtle border-0">
+            <img src="images/sam.jpg" class="card-img-top rounded-top-5" alt="แม้ก กรธัสส์ รับบท สาม ไตรภพ">
 
-            <div class="row g-4 justify-content-center">
-
-                <div class="col-md-5">
-
-                    <div class="card border-0 shadow h-100">
-
-                        <div class="card-body text-center p-4">
-
-
-
-                            <h4 class="fw-bold k2d-regular">
-                                แจม จีรณัช
-                            </h4>
-
-                            <p class="mb-0 k2d-regular">
-                                รับบทโดย ณฐ ณฐสิชณ์
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-5">
-
-                    <div class="card border-0 shadow h-100">
-
-                        <div class="card-body text-center p-4">
-
-
-
-                            <h4 class="fw-bold k2d-regular">
-                                สาม ไตรภพ
-                            </h4>
-
-                            <p class="mb-0 k2d-regular">
-                                รับบทโดย แม้ก กรธัสส์
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="card-body">
+              <h4 class="h5 fw-bold mitr-regular">สาม ไตรภพ</h4>
+              <p class="mb-0 mitr-regular">รับบทโดย แม้ก กรธัสส์</p>
             </div>
-
+          </div>
         </div>
 
-    </section>
+      </div>
+
+      <!-- แบนเนอร์ซีรีส์ -->
+      <div class="text-center">
+        <img src="images/1500x500.jpg" class="img-fluid rounded-4 shadow mb-4" alt="ซีรีส์ ที่สามของเธอ Your Third">
 
 
-    <!-- ================= TEASER ================= -->
-    <section class="py-5">
-
-        <div class="container text-center">
-
-            <h2 class="fw-bold mb-4 pridi-regular">
-                OFFICIAL TEASER
-            </h2>
-
-            <p class="mb-4 k2d-regular">
-                ที่สามของเธอ
-            </p>
-
-            <a href="https://youtu.be/GO4a4PWVSfg" target="_blank" class="btn btn-lg text-white px-5 k2d-regular"
-                style="background-color:#f79256;">
-
-                ▶ ดู Official Teaser
-
-            </a>
-
+        <div>
+          <a href="https://www.iq.com/play/your-third-episode-1-onlibx4ku8?lang=en_us&amp;sh_pltf=4"
+            class="btn btn-lg rounded-pill px-5 shadow mitr-regular" style="background: linear-gradient(135deg, #ffd82a 0%, #FFFFFF 100%);
+           color: #3e2a1c;
+           border: none;" target="_blank" rel="noopener">
+            รับชมที่สามของเธอซีรีส์
+          </a>
         </div>
+      </div>
 
-    </section>
+    </div>
+  </section>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warning-subtle py-5 text-center">
+    <div class="container">
 
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="py-5" style="background-color:#ffef9f;">
+      <blockquote class="fs-4 fw-semibold mb-4 sriracha-regular" data-aos="fade-up" data-aos-duration="800">
 
-        <div class="container text-center">
+        “บางครั้งความรักก็ไม่ได้เริ่มต้นจากคำว่ารัก…
+        แต่อาจเริ่มจากการได้เป็น ‘คนนอก’ ในหัวใจของใครบางคน”
 
-            <h4 class="fw-bold">
-                “บางครั้งความรักก็ไม่ได้เริ่มต้นจากคำว่ารัก…
-            </h4>
+      </blockquote>
+      <hr class="w-50 mx-auto">
+      <p class="mb-1 kanit-regular">
+        พบกับ “ที่สามของเธอ” นิยาย Boy Love แนวโรแมนติกคอมเมดี้ จาก LAILA (ไลลา)
+      </p>
+      <p class="mb-0 kanit-regular">
+        เรื่องราวความสัมพันธ์ที่เต็มไปด้วยรอยยิ้ม ความวุ่นวาย และช่วงเวลาที่ทำให้หัวใจต้องเผลอเต้นแรงโดยไม่รู้ตัว
+        ถ้าคุณกำลังมองหานิยายที่อ่านแล้วอบอุ่นหัวใจ พร้อมรอยยิ้มเล็ก ๆ ระหว่างทาง <br> เรื่องนี้อาจเป็นเรื่องที่คุณกำลังตามหา </br>
+      </p>
+    </div>
+  </footer>
 
-            <p class="fs-5">
-                แต่อาจเริ่มจากการได้เป็น ‘คนที่สาม’
-                ในหัวใจของใครบางคน”
-            </p>
-
-            <hr>
-
-            <p class="mb-2 k2d-regular">
-                พบกับ “ที่สามของเธอ” นิยาย Boy Love
-                แนวโรแมนติก–คอมเมดี้จาก LAILA (ไลลา)
-            </p>
-
-            <p class="mb-0 k2d-regular">
-                เรื่องราวความสัมพันธ์ที่เต็มไปด้วยรอยยิ้ม
-                ความวุ่นวาย และช่วงเวลาที่ทำให้หัวใจ
-                ต้องเผลอเต้นแรงโดยไม่รู้ตัว
-            </p>
-
-        </div>
-
-    </footer>
-
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
