@@ -366,7 +366,7 @@
           <span id="themeLabel">โหมดมืด</span>
         </button>
       </div>
-
+    
     </div>
   </nav>
 
@@ -1009,6 +1009,28 @@
         } catch (error) {
           // ยังเปลี่ยนธีมได้ แม้บันทึกข้อมูลไม่ได้
         }
+      }
+    }
+    function setTheme(isDark, save = true) {
+      document.body.dataset.theme = isDark ? "dark" : "light";
+
+      const themeIcon = document.getElementById("themeIcon");
+      const themeToggle = document.getElementById("themeToggle");
+
+      if (isDark) {
+        // โหมดมืด: แสดงรูปดวงจันทร์
+        themeIcon.src = "images/moon.png";
+        themeIcon.alt = "เปลี่ยนเป็นโหมดสว่าง";
+        themeToggle.setAttribute("aria-label", "เปลี่ยนเป็นโหมดสว่าง");
+      } else {
+        // โหมดสว่าง: แสดงรูปดวงอาทิตย์ที่ส่งมา
+        themeIcon.src = "images/sun.png";
+        themeIcon.alt = "เปลี่ยนเป็นโหมดมืด";
+        themeToggle.setAttribute("aria-label", "เปลี่ยนเป็นโหมดมืด");
+      }
+
+      if (save) {
+        localStorage.setItem("goodbook-theme", isDark ? "dark" : "light");
       }
     }
 

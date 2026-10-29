@@ -88,21 +88,112 @@
 }
 
 
-/* ===== ธีมมืด: โทนม่วงเข้ม ชมพู และครีม ===== */
-body[data-theme="dark"] {
-  background-color: #211d26 !important;
-  color: #f5edf2 !important;
+/* ===== ปุ่มเปลี่ยนธีมสว่าง/มืด ===== */
+#themeToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  border: 1px solid #e7b2c8;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F8C8DC 0%, #FFFFFF 100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  --bs-body-bg: #211d26;
-  --bs-body-color: #f5edf2;
-  --bs-body-color-rgb: 245, 237, 242;
-  --bs-emphasis-color: #fff0f5;
-  --bs-emphasis-color-rgb: 255, 240, 245;
-  --bs-secondary-color: #c9bac8;
-  --bs-border-color: #514353;
-  --bs-link-color: #f5b8d0;
-  --bs-link-hover-color: #ffd7e7;
-  --bs-tertiary-bg: #342b3b;
+/* รูปดวงอาทิตย์และดวงจันทร์ */
+#themeIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* เอฟเฟกต์เมื่อชี้เมาส์ */
+/* กล่องปุ่มเปลี่ยนธีม */
+#themeToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  width: auto;
+  min-width: 100px;
+  height: 44px;
+  padding: 6px 12px;
+
+  border: 1px solid #e7b2c8;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #F8C8DC 0%, #FFFFFF 100%);
+
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* รูปไอคอนดวงอาทิตย์และดวงจันทร์ */
+#themeIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* ข้อความภายในปุ่ม */
+#themeToggle span {
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* เอฟเฟกต์เมื่อชี้เมาส์ */
+#themeToggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(90, 50, 70, 0.2);
+}
+
+/* โหมดมืด */
+body[data-theme="dark"] #themeToggle {
+  background: linear-gradient(135deg, #493548 0%, #302637 100%);
+  border-color: #826780;
+}
+
+#themeToggle:hover #themeIcon {
+  transform: rotate(15deg);
+}
+
+/* เอฟเฟกต์เมื่อกดปุ่ม */
+#themeToggle:active {
+  transform: scale(0.95);
+}
+
+/* เส้นขอบเมื่อเลือกปุ่มด้วยคีย์บอร์ด */
+#themeToggle:focus-visible {
+  outline: 3px solid #b86b91;
+  outline-offset: 3px;
+}
+
+/* ===== ปรับสีปุ่มเมื่อใช้โหมดมืด ===== */
+body[data-theme="dark"] #themeToggle {
+  background: linear-gradient(135deg, #493548 0%, #302637 100%);
+  border-color: #826780;
+}
+
+body[data-theme="dark"] #themeToggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ลดการเคลื่อนไหวสำหรับผู้ที่ตั้งค่าไว้ */
+@media (prefers-reduced-motion: reduce) {
+
+  #themeToggle,
+  #themeIcon {
+    transition: none;
+  }
 }
 
 /* Navbar และ Footer */
