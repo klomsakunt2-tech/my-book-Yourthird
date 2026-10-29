@@ -1,0 +1,285 @@
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.k2d-regular {
+  font-family: "K2D", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mitr-regular {
+  font-family: "Mitr", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* ===== ปุ่มลูกศรลอย ===== */
+.scroll-arrows {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scroll-arrow {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e7b2c8;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F8C8DC 0%, #FFFFFF 100%);
+  color: #5a3e2b;
+  font-size: 1.65rem;
+  font-weight: bold;
+  line-height: 1;
+  box-shadow: 0 .25rem .8rem rgba(60, 35, 50, .2);
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease,
+    opacity .2s ease;
+}
+
+.scroll-arrow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .45rem 1rem rgba(60, 35, 50, .25);
+}
+
+.scroll-arrow:focus-visible {
+  outline: 3px solid #b86b91;
+  outline-offset: 3px;
+}
+
+.scroll-arrow:active {
+  transform: scale(.95);
+}
+
+@media (max-width: 576px) {
+  .scroll-arrows {
+    right: 12px;
+    bottom: 16px;
+    gap: 8px;
+  }
+
+  .scroll-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-arrow {
+    transition: none;
+  }
+}
+
+
+/* ===== ธีมมืด: โทนม่วงเข้ม ชมพู และครีม ===== */
+body[data-theme="dark"] {
+  background-color: #211d26 !important;
+  color: #f5edf2 !important;
+
+  --bs-body-bg: #211d26;
+  --bs-body-color: #f5edf2;
+  --bs-body-color-rgb: 245, 237, 242;
+  --bs-emphasis-color: #fff0f5;
+  --bs-emphasis-color-rgb: 255, 240, 245;
+  --bs-secondary-color: #c9bac8;
+  --bs-border-color: #514353;
+  --bs-link-color: #f5b8d0;
+  --bs-link-hover-color: #ffd7e7;
+  --bs-tertiary-bg: #342b3b;
+}
+
+/* Navbar และ Footer */
+body[data-theme="dark"] .navbar,
+body[data-theme="dark"] footer {
+  background-color: #302637 !important;
+  color: #f5edf2 !important;
+}
+
+/* โลโก้และเมนู */
+body[data-theme="dark"] .navbar-brand,
+body[data-theme="dark"] .nav-link,
+body[data-theme="dark"] footer a {
+  color: #f5b8d0 !important;
+}
+
+body[data-theme="dark"] .nav-link:hover,
+body[data-theme="dark"] footer a:hover {
+  color: #ffe0ec !important;
+}
+
+/* การ์ดและรายการข้อมูล */
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .list-group-item {
+  background-color: #342b3b !important;
+  color: #f5edf2 !important;
+  border-color: #59475f !important;
+}
+
+/* กล่องเนื้อหาที่มีพื้นหลังไล่สี */
+body[data-theme="dark"] .theme-gradient,
+body[data-theme="dark"] .faq-answer {
+  background: linear-gradient(135deg,
+      #493548 0%,
+      #302637 100%) !important;
+  color: #f9edf4 !important;
+}
+
+/* กล่องแชร์และให้คะแนน */
+body[data-theme="dark"] .engagement-card {
+  background: linear-gradient(135deg,
+      #493548 0%,
+      #302637 100%) !important;
+  color: #f9edf4 !important;
+  border: 1px solid #654a60 !important;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+}
+
+body[data-theme="dark"] .engagement-card .form-control {
+  background-color: #251f2c !important;
+  color: #fff0f5 !important;
+  border-color: #70556c !important;
+}
+
+body[data-theme="dark"] .engagement-card .form-control::placeholder {
+  color: #bcaabb !important;
+}
+
+body[data-theme="dark"] .engagement-card .form-control:focus {
+  border-color: #f5b8d0 !important;
+  box-shadow: 0 0 0 .2rem rgba(245, 184, 208, .18);
+}
+
+/* ข้อความรองและแหล่งข้อมูล */
+body[data-theme="dark"] .text-body-secondary,
+body[data-theme="dark"] .source-link {
+  color: #cdbfce !important;
+}
+
+/* ปุ่มขอบ */
+body[data-theme="dark"] .btn-outline-secondary {
+  color: #f5c4da !important;
+  border-color: #987a91 !important;
+}
+
+body[data-theme="dark"] .btn-outline-secondary:hover {
+  background-color: #574158 !important;
+  color: #ffffff !important;
+}
+
+/* ปุ่มสีเหลืองให้เข้ากับโหมดมืด */
+body[data-theme="dark"] .gradient-yellow {
+  background: linear-gradient(135deg,
+      #f4bfd4 0%,
+      #ffe9d5 100%);
+  color: #392637 !important;
+}
+
+body[data-theme="dark"] .gradient-yellow:hover {
+  background: linear-gradient(135deg,
+      #ffd5e5 0%,
+      #fff3e8 100%);
+  color: #392637 !important;
+}
+
+/* ดาวให้คะแนน */
+body[data-theme="dark"] .rating-star {
+  color: #887b8d;
+}
+
+body[data-theme="dark"] .rating-star.active,
+body[data-theme="dark"] .rating-star:hover {
+  color: #ffd166;
+}
+
+/* ปุ่มเปลี่ยนธีม */
+body[data-theme="dark"] #themeToggle {
+  background-color: #443447;
+  color: #ffe0ec !important;
+  border-color: #826780 !important;
+}
+
+body[data-theme="dark"] #themeToggle:hover {
+  background-color: #594158;
+}
+
+/* ปุ่มลูกศรเลื่อนหน้าในโหมดมืด */
+body[data-theme="dark"] .scroll-arrow {
+  background: linear-gradient(135deg, #f5b8d0, #e7c8ef);
+  color: #302237;
+  border-color: #f5b8d0;
+}
+
+/* ไอคอนโหมดมืด */
+.theme-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+
+/* ===== ปุ่มแชร์ ===== */
+
+.action-btn {
+  border-radius: 50rem;
+  transition: transform 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== ระบบให้คะแนนดาว ===== */
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.rating-star {
+  border: 0;
+  background: transparent;
+  color: #b8aeb0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  padding: 0.15rem;
+  cursor: pointer;
+}
+
+.rating-star.active,
+.rating-star:hover {
+  color: #f2bd25;
+}
+
+.rating-star:focus-visible {
+  outline: 2px solid #b8860b;
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  body,
+  .action-btn {
+    transition: none;
+  }
+}
